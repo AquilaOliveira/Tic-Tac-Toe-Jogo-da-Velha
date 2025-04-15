@@ -1,0 +1,147 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #ff6347aa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #32cd32aa);
+}
+
+.game-title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color:#e67e22;
+}
+
+.game-info button {
+  background-color: oklch(58.8% 0.158 241.966);
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.game-info button:hover {
+  background-color: #e67e22;
+}
+
+.status {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+  background-color:oklch(50% 0.134 242.749);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: background-color 0.3s ease;
+}
+
+.square {
+  width: 3rem;
+  height: 3rem;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: oklch(42.4% 0.199 265.638);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.square:hover {
+  background-color: #e67e22;
+}
+
+.square:active {
+  transform: scale(0.95);
+  background-color: oklch(28.2% 0.091 267.935);
+}
+
+button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  background-color: oklch(44.3% 0.11 240.79);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+button:hover {
+  background-color: #e67e22
+}
+
+button:active {
+  transform: scale(0.98);
+  background-color: #004085;
+}
+
+.history-button {
+  background-color: oklch(29.3% 0.066 243.157);
+  color: #fff;
+}
+
+.history-button:hover {
+  background-color: #e67e22;
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.reset-button {
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: oklch(44.3% 0.11 240.79);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.reset-button:hover {
+  background-color: #e67e22;
+}
+
+.reset-button:active {
+  transform: oklch(29.3% 0.066 243.157)
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
